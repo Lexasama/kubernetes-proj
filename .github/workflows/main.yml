@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: lexasama/kubernetes-demo:latest
+          tags: lexasama226/kubernetes-proj:latest
