@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubernetes-proj
+spec:
+  selector:
+    matchLabels:
+      app: kubernetes-proj
+  template:
+    metadata:
+      labels:
+        app: kubernetes-proj
+    spec:
+      containers:
+      - name: kubernetes-proj
+        image: <Image>
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000
